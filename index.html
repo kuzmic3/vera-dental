@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="sr">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vera Dental · stomatolog dr Bora Kitanović, Niš</title>
+<meta name="description" content="Stomatološka ordinacija Vera Dental u Nišu, dr Bora Kitanović. Implanti, bezmetal krunice, proteze i beljenje zuba. Ocena 5,0 na Google-u. Pozovite 060 334 6860.">
+<link rel="canonical" href="https://kuzmic3.github.io/vera-dental/">
+<link rel="icon" href="assets/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vera Dental · dr Bora Kitanović, Niš">
+<meta property="og:description" content="Stomatološka ordinacija u Nišu. Pogledajte radove pre i posle i zakažite pregled.">
+<meta property="og:image" content="https://kuzmic3.github.io/vera-dental/assets/og.jpg">
+<meta property="og:url" content="https://kuzmic3.github.io/vera-dental/">
+<meta name="theme-color" content="#15294a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dentist","name":"Vera Dental","alternateName":"Stomatološka ordinacija Vera Dental","url":"https://kuzmic3.github.io/vera-dental/",
+ "telephone":"+381603346860","email":"ordinacijakitanovic@gmail.com","image":"https://kuzmic3.github.io/vera-dental/assets/og.jpg",
+ "address":{"@type":"PostalAddress","streetAddress":"Janka Veselinovića 6b","postalCode":"18000","addressLocality":"Niš","addressCountry":"RS"},
+ "openingHours":["Mo-Fr 09:00-19:00"],
+ "employee":{"@type":"Person","name":"dr Bora Kitanović"},
+ "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"41"}}
+</script>
+<style>
+:root{
+  --navy:#15294a; --navy-2:#1e3a63; --ink:#1d2433; --muted:#5b6475;
+  --accent:#0fabaa; --accent-dark:#0b7f7e; --accent-soft:#e3f5f4;
+  --bg:#fbfaf7; --card:#ffffff; --line:#e7e4dd;
+  --r:20px; --r-sm:12px;
+  --shadow:0 1px 2px rgba(21,41,74,.06),0 8px 24px rgba(21,41,74,.08);
+  --head:"Manrope",system-ui,sans-serif; --body:"Inter",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);color:var(--navy);margin:0;letter-spacing:-.02em}
+h2{font-size:40px;line-height:1.15;text-wrap:balance}
+h3{font-size:20px;line-height:1.3}
+p{margin:0;text-wrap:pretty}
+.wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0)}
+.s{display:block;text-wrap:balance}
+section{padding:96px 0}
+.sec-head{text-align:center;max-width:720px;margin:0 auto 48px;display:flex;flex-direction:column;align-items:center;gap:16px}
+.tag{display:inline-flex;align-items:center;gap:8px;font:600 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-dark);background:var(--accent-soft);padding:8px 12px;border-radius:999px}
+.lead{font-size:20px;line-height:1.5;color:var(--muted)}
+
+/* dugme: jedan stil + tamna varijanta */
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--navy);color:#fff;text-decoration:none;font:600 16px/1 var(--body);padding:16px 24px;border-radius:999px;border:0;cursor:pointer;white-space:nowrap;transition:transform .2s,background .2s}
+.btn:hover{background:var(--navy-2);transform:translateY(-2px)}
+.btn.has-ico svg{width:20px;height:20px;flex:none}
+.btn.on-dark{background:var(--accent);color:#06302f}
+.btn.on-dark:hover{background:#3cc4c2}
+.tlink{color:var(--navy);font-weight:600;text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:4px}
+
+/* gornja traka */
+.topbar{background:var(--navy);color:#dfe7f2;font-size:12px}
+.topbar .wrap{display:flex;gap:24px;align-items:center;justify-content:space-between;padding-top:8px;padding-bottom:8px}
+.topbar a{text-decoration:none;color:#fff;font-weight:600}
+.topbar .grp{display:flex;gap:24px;align-items:center;min-width:0}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#9aa6b8;margin-right:8px}
+.dot.open{background:#33d6a0;box-shadow:0 0 0 4px rgba(51,214,160,.18)}
+
+/* zaglavlje */
+header.nav{position:sticky;top:0;z-index:30;background:rgba(251,250,247,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .2s}
+header.nav.stuck{border-bottom-color:var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo svg{width:36px;height:40px;flex:none}
+.logo b{display:block;font:800 20px/1 var(--head);color:var(--navy);letter-spacing:.04em}
+.logo i{display:block;font:600 12px/1 var(--head);font-style:normal;color:var(--accent);letter-spacing:.32em;margin-top:4px}
+.menu{display:flex;align-items:center;gap:32px}
+.menu a{text-decoration:none;font-weight:500;color:var(--ink)}
+.menu a:hover{color:var(--accent-dark)}
+.menu a.btn,.menu a.btn:hover{color:#fff}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;padding:12px}
+.burger span{display:block;height:2px;background:var(--navy);margin:4px 0;border-radius:2px;transition:transform .2s,opacity .2s}
+
+/* hero */
+.hero{padding:56px 0 96px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+.hero-text{container-type:inline-size;min-width:0}
+h1{font-size:9vw;font-size:clamp(40px,15cqi,88px);line-height:1.02;letter-spacing:-.03em;margin:20px 0 24px}
+h1 .ln{display:block;white-space:nowrap}
+h1 .ln em{font-style:normal;color:var(--accent)}
+.hero .lead{max-width:520px}
+.cta-row{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:center;margin-top:32px}
+.proofs{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:32px;color:var(--muted);font-size:16px}
+.proofs span{display:inline-flex;align-items:center;gap:8px}
+.proofs svg{width:20px;height:20px;color:var(--accent);flex:none}
+.hero-media{position:relative;min-width:0}
+.photo{position:relative;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:16/10;background:#dfe3e8}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:35% 50%}
+.float{position:absolute;background:var(--card);border-radius:var(--r-sm);box-shadow:var(--shadow);padding:12px 16px;display:flex;align-items:center;gap:12px;font-size:16px}
+.float b{font-family:var(--head);color:var(--navy);font-size:20px}
+.f-rating{left:-24px;bottom:-24px}
+.f-rating .stars{color:#f5b301;letter-spacing:2px;font-size:16px}
+.f-status{right:20px;top:20px;font-weight:600;color:var(--navy)}
+.f-status small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.shield-badge{position:absolute;right:-20px;bottom:40px;width:96px;height:104px;filter:drop-shadow(0 8px 16px rgba(21,41,74,.18))}
+
+/* potpisna animacija: štit se iscrta, ispuni, zub se pojavi, odsjaj */
+.shield-badge .sh-stroke{fill:none;stroke:var(--accent);stroke-width:2.5;stroke-linejoin:round}
+.shield-badge .sh-fill{fill:var(--accent)}
+.shield-badge .tooth{fill:#fff}
+.js .shield-badge .sh-stroke{stroke-dasharray:var(--len,200);stroke-dashoffset:var(--len,200);animation:draw 1.2s .3s ease forwards}
+.js .shield-badge .sh-fill{opacity:0;animation:fadein .5s 1.3s ease forwards}
+.js .shield-badge .tooth{opacity:0;transform:translateY(4px);transform-box:fill-box;animation:rise .6s 1.6s ease forwards}
+.shield-badge .shine{transform:translateX(-70px);animation:shine 10s 2.6s ease-in-out infinite}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fadein{to{opacity:1}}
+@keyframes rise{to{opacity:1;transform:none}}
+@keyframes shine{0%{transform:translateX(-70px)}8%{transform:translateX(80px)}100%{transform:translateX(80px)}}
+
+
+/* usluge */
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px;display:flex;flex-direction:column;gap:12px;min-width:0;transition:transform .25s,box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:transparent}
+.ico{width:52px;height:52px;border-radius:16px;background:var(--accent-soft);display:grid;place-items:center;color:var(--accent-dark)}
+.ico svg{width:28px;height:28px}
+.card p{color:var(--muted)}
+.card .s,.tile .s,.tl-step .s{text-wrap:pretty}
+.card .ask{margin-top:auto;padding-top:8px;font-weight:600;color:var(--navy);text-decoration:none;font-size:16px}
+.card .ask:hover{color:var(--accent-dark)}
+
+/* radovi */
+.works{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ba{position:relative;max-width:626px;margin:0 auto;border-radius:24px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:626/302;user-select:none;touch-action:pan-y;background:#ddd}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba .after{clip-path:inset(0 0 0 var(--pos,50%))}
+.ba .bar{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:4px;margin-left:-2px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.08)}
+.ba .knob{position:absolute;top:50%;left:var(--pos,50%);width:48px;height:48px;margin:-24px 0 0 -24px;border-radius:50%;background:#fff;box-shadow:var(--shadow);display:grid;place-items:center;color:var(--navy)}
+.ba .knob svg{width:24px;height:24px}
+.ba .lbl{position:absolute;top:16px;font:600 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;padding:8px 12px;border-radius:999px;background:rgba(21,41,74,.72);color:#fff}
+.ba .lbl.l{left:16px}.ba .lbl.r{right:16px;background:var(--accent);color:#06302f}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.ba-note{text-align:center;color:var(--muted);margin-top:16px;font-size:16px}
+.gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:48px}
+.gallery figure{margin:0;border-radius:var(--r-sm);overflow:hidden;background:var(--bg);border:1px solid var(--line);position:relative;min-width:0}
+.gallery img{width:100%;aspect-ratio:640/336;object-fit:cover}
+.gallery figcaption{display:flex;justify-content:space-between;padding:8px 12px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.gallery figcaption span:last-child{color:var(--accent-dark)}
+
+/* zašto */
+/* kontrole klizača */
+.sl-ctrl{display:none;align-items:center;justify-content:center;gap:16px;margin-top:16px}
+.sl-ctrl button.arr{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--navy);display:grid;place-items:center;cursor:pointer}
+.sl-ctrl button.arr svg{width:20px;height:20px}
+.sl-ctrl button.arr:disabled{opacity:.35}
+.sl-dots{display:flex;gap:8px}
+.sl-dots i{width:8px;height:8px;border-radius:999px;background:var(--line);transition:width .3s,background .3s}
+.sl-dots i.on{width:24px;background:var(--accent)}
+/* zašto: bento */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(220px,auto);gap:20px}
+.tile{position:relative;border-radius:24px;background:var(--card);border:1px solid var(--line);padding:32px;overflow:hidden;min-width:0;display:flex;flex-direction:column;gap:12px;transition:transform .3s,box-shadow .3s}
+.tile:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.tile p{color:var(--muted)}
+.tile .k{font:600 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-dark)}
+.t-dr{grid-column:span 2;grid-row:span 2;background:radial-gradient(120% 90% at 100% 0,#22457a 0,var(--navy) 60%);border:0;color:#dfe7f2;justify-content:flex-end}
+.t-dr h3{color:#fff;font-size:40px;line-height:1.1}
+.t-dr p{color:#b9c6d8;font-size:20px;max-width:440px}
+.t-dr .k{color:#5fd8d6}
+.t-dr .wm{position:absolute;right:-48px;top:-32px;width:320px;height:340px;opacity:.16;animation:float 8s ease-in-out infinite}
+.t-dr .wm path{fill:none;stroke:#5fd8d6;stroke-width:.8}
+.t-dr .tlink{color:#fff;margin-top:12px;align-self:flex-start}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(16px) rotate(2deg)}}
+.t-rate{grid-column:span 2;flex-direction:row;align-items:center;gap:32px}
+.t-rate .big{font:800 88px/1 var(--head);color:var(--navy);letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.stars5{position:relative;display:inline-block;font-size:28px;letter-spacing:4px;color:#e6e2da;line-height:1}
+.stars5 span{position:absolute;inset:0;width:var(--fill,100%);overflow:hidden;white-space:nowrap;color:#f5b301;transition:width 1.4s ease}
+.js .t-rate:not(.go) .stars5 span{width:0}
+.t-ba{grid-column:span 2}
+.t-ba .mini{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:626/302;background:#ddd;margin-top:4px}
+.t-ba .mini img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.t-ba .mini img.after{clip-path:inset(0 0 0 50%);animation:wipe 6s ease-in-out infinite}
+.t-ba .mini .ln{position:absolute;top:0;bottom:0;left:50%;width:3px;margin-left:-1px;background:#fff;animation:wipeln 6s ease-in-out infinite}
+.t-ba .mini .lbl{position:absolute;left:12px;top:12px;font:600 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;padding:8px 12px;border-radius:999px;background:rgba(21,41,74,.72);color:#fff}
+.t-ba .mini .lbl.r{left:auto;right:12px;background:var(--accent);color:#06302f}
+@keyframes wipe{0%,100%{clip-path:inset(0 0 0 88%)}45%,55%{clip-path:inset(0 0 0 12%)}}
+@keyframes wipeln{0%,100%{left:88%}45%,55%{left:12%}}
+.t-day .bar{position:relative;height:12px;border-radius:999px;background:var(--accent-soft);margin:16px 0 8px}
+.t-day .bar i{position:absolute;left:0;top:0;bottom:0;border-radius:999px;background:linear-gradient(90deg,var(--accent),#5fd8d6);width:var(--prog,0%);transition:width 1.2s ease}
+.t-day .bar b{position:absolute;top:50%;left:var(--prog,0%);width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;background:#fff;border:4px solid var(--navy);transition:left 1.2s ease}
+.t-day .ends{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);font-weight:600}
+.t-day .now{font:700 20px/1.2 var(--head);color:var(--navy)}
+
+/* proces */
+/* dolazak: vremenska linija koja se puni sa skrolom */
+.tl{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;--p:0}
+.tl::before,.tl::after{content:"";position:absolute;left:12.5%;right:12.5%;top:36px;height:4px;border-radius:4px;background:var(--line)}
+.tl::after{background:linear-gradient(90deg,var(--accent),#5fd8d6);right:auto;width:calc(75% * var(--p))}
+.tl-step{position:relative;z-index:1;text-align:center;display:flex;flex-direction:column;align-items:center;gap:12px;min-width:0}
+.tl-node{width:76px;height:76px;border-radius:50%;background:var(--card);border:4px solid var(--line);display:grid;place-items:center;color:var(--muted);transition:border-color .4s,background .4s,color .4s,transform .4s}
+.tl-node svg{width:32px;height:32px}
+.tl-step.on .tl-node{border-color:var(--accent);background:var(--accent);color:#fff;transform:scale(1.06);box-shadow:0 0 0 8px var(--accent-soft)}
+.tl-step .n{font:600 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.tl-step.on .n{color:var(--accent-dark)}
+.tl-step p{color:var(--muted)}
+
+/* utisak */
+.quote{max-width:880px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:28px;padding:48px;display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:start}
+.quote .g{width:88px;height:88px;border-radius:24px;background:var(--accent-soft);display:grid;place-items:center;font:800 32px/1 var(--head);color:var(--navy);text-align:center}
+.quote .g small{display:block;font:600 12px/1 var(--body);color:#f5b301;letter-spacing:2px;margin-top:4px}
+.quote blockquote{margin:0;font:600 24px/1.45 var(--head);color:var(--navy);letter-spacing:-.01em}
+.quote cite{display:block;margin-top:20px;font-style:normal;color:var(--muted)}
+
+/* FAQ */
+.faq{max-width:880px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:0 24px}
+.faq summary{list-style:none;cursor:pointer;padding:20px 0;font:700 20px/1.3 var(--head);color:var(--navy);display:flex;justify-content:space-between;gap:16px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";flex:none;width:28px;height:28px;border-radius:50%;background:var(--accent-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230b7f7e' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M12 6v12M6 12h12'/%3E%3C/svg%3E") center/16px no-repeat;transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 20px;color:var(--muted)}
+
+/* završni CTA */
+.final{background:var(--navy);color:#dfe7f2;text-align:center;position:relative;overflow:hidden}
+.final h2{color:#fff}
+.final .lead{color:#b9c6d8}
+.final .sec-head{margin-bottom:32px}
+.final .ring{position:absolute;border-radius:50%;border:1px solid rgba(15,171,170,.25);pointer-events:none}
+
+/* kontakt */
+.contact .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:32px;min-width:0}
+.panel h3{margin-bottom:20px}
+.row{display:flex;gap:16px;padding:16px 0;border-top:1px solid var(--line);align-items:flex-start}
+.row:first-of-type{border-top:0;padding-top:0}
+.row svg{width:24px;height:24px;color:var(--accent);flex:none;margin-top:0}
+.row b{display:block;font-family:var(--head);color:var(--navy)}
+.row a{font-weight:600;text-decoration:none;overflow-wrap:anywhere}
+.row .muted{color:var(--muted)}
+.hours{width:100%;border-collapse:collapse;margin-top:8px;font-size:16px}
+.hours td{padding:4px 0;color:var(--muted)}
+.hours td:last-child{text-align:right}
+.hours tr.today td{color:var(--navy);font-weight:600}
+form{display:flex;flex-direction:column;gap:16px}
+form .btn{justify-content:center}
+label{display:flex;flex-direction:column;gap:8px;font-weight:600;font-size:16px;color:var(--navy)}
+input,textarea{font:400 16px/1.4 var(--body);padding:12px 16px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);width:100%}
+input:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:0;border-color:transparent}
+.err{color:#b42318;font-weight:500;font-size:12px;min-height:16px}
+.form-ok{background:var(--accent-soft);color:var(--accent-dark);padding:16px;border-radius:12px;font-weight:600}
+.form-note{font-size:12px;color:var(--muted);text-align:center}
+
+footer{background:#0f1f39;color:#b9c6d8;padding:48px 0 32px;font-size:16px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:24px 48px;justify-content:space-between;align-items:flex-start}
+footer .logo b{color:#fff}
+footer p{margin-top:4px}
+footer .copy{width:100%;border-top:1px solid rgba(255,255,255,.1);padding-top:24px;font-size:12px;color:#8798b3}
+
+/* plutajuće dugme za poziv (telefon) */
+.callfab{position:fixed;left:16px;right:16px;bottom:16px;z-index:40;display:none;justify-content:center;transform:translateY(calc(100% + 32px));transition:transform .3s}
+.callfab.show{transform:none}
+.callfab .btn{width:100%;justify-content:center;box-shadow:0 8px 24px rgba(21,41,74,.3)}
+
+/* reveal: sadržaj vidljiv bez JS-a */
+.js .rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.js .rv.in{opacity:1;transform:none}
+
+@media (max-width:1199px){
+  .f-status{display:none}
+}
+@media (max-width:1100px){
+  .svc{grid-template-columns:repeat(2,1fr)}
+  .bento{grid-template-columns:repeat(2,1fr)}
+  .t-dr,.t-rate{grid-column:span 2}
+  .t-dr{grid-row:span 1;min-height:320px}
+  .gallery{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:991px){
+  .menu{position:fixed;inset:76px 0 auto 0;background:var(--bg);flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 24px;border-bottom:1px solid var(--line);transform:translateY(-8px);opacity:0;pointer-events:none;transition:opacity .2s,transform .2s}
+  .menu a{padding:16px 0;border-bottom:1px solid var(--line);font-size:20px}
+  .menu .btn{margin-top:16px;justify-content:center;border-bottom:0}
+  .nav.open .menu{opacity:1;transform:none;pointer-events:auto}
+  .burger{display:block}
+  .nav.open .burger span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+  .nav.open .burger span:nth-child(2){opacity:0}
+  .nav.open .burger span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+  .hero .wrap{grid-template-columns:1fr;gap:48px}
+  .hero-media{max-width:640px}
+  .contact .grid{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .wrap{padding:0 20px}
+  section{padding:64px 0}
+  h2{font-size:32px}
+  .lead{font-size:16px}
+  .topbar .addr,.topbar .hrs{display:none}
+  .hero{padding:24px 0 64px}
+  h1{margin:16px 0 16px}
+  .hero .wrap{gap:28px}
+  .cta-row{margin-top:24px}
+  .proofs{margin-top:20px;gap:8px 16px;font-size:12px}
+  .photo{aspect-ratio:16/9;border-radius:20px}
+  .f-rating{left:12px;bottom:-20px;padding:8px 12px}
+  .f-rating b{font-size:16px}
+  .f-status{display:none}
+  .shield-badge{right:8px;bottom:-28px;width:56px;height:64px}
+  .f-rating{max-width:calc(100% - 96px)}
+  .hide-sm{display:none}
+  .svc{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -20px;padding:0 20px 8px}
+  .svc .card{flex:0 0 82%;scroll-snap-align:center;scroll-snap-stop:always}
+  .sl-ctrl{display:flex}
+  .svc,.gallery{scrollbar-width:none}
+  .svc::-webkit-scrollbar,.gallery::-webkit-scrollbar{display:none}
+  .card{padding:24px}
+  .bento{grid-template-columns:1fr;grid-auto-rows:auto}
+  .t-dr,.t-rate,.t-ba{grid-column:auto}
+  .t-dr{min-height:360px}
+  .t-dr h3{font-size:32px}
+  .t-dr p{font-size:16px}
+  .tile{padding:24px}
+  .t-rate{flex-direction:column;align-items:flex-start;gap:12px}
+  .t-rate .big{font-size:72px}
+  .tl{grid-template-columns:1fr;gap:32px;padding-left:0}
+  .tl::before,.tl::after{left:36px;right:auto;top:36px;bottom:36px;width:4px;height:auto}
+  .tl::after{height:calc((100% - 72px) * var(--p));bottom:auto}
+  .tl-step{flex-direction:row;text-align:left;align-items:flex-start;gap:20px}
+  .tl-step > div{padding-top:8px}
+  .tl-node{flex:none}
+  .gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:32px -20px 0;padding:0 20px 8px}
+  .gallery figure{flex:0 0 82%;scroll-snap-align:center;scroll-snap-stop:always}
+  .quote{grid-template-columns:1fr;padding:28px;gap:20px}
+  .quote blockquote{font-size:20px}
+  .panel{padding:24px}
+  .callfab{display:flex}
+  footer{padding-bottom:96px}
+}
+@media (prefers-reduced-motion:reduce){
+  .tl{--p:1!important}
+  .js .t-rate:not(.go) .stars5 span{width:100%}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rv{opacity:1;transform:none}
+  .js .shield-badge .sh-stroke{stroke-dashoffset:0}
+  .js .shield-badge .sh-fill,.js .shield-badge .tooth{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <path id="shield" d="M24 3 44 10v15c0 12-8.4 20.4-20 24C12.4 45.4 4 37 4 25V10Z"/>
+    <path id="tooth" d="M17.6 15.2c-3.6 0-6 2.8-6 6.8 0 4.4 1.9 6.4 2.7 10.4.7 3.6 1.4 6.8 3.3 6.8 1.8 0 2-3.6 2.8-6.3.5-1.7 1.6-2.6 3.6-2.6s3.1.9 3.6 2.6c.8 2.7 1 6.3 2.8 6.3 1.9 0 2.6-3.2 3.3-6.8.8-4 2.7-6 2.7-10.4 0-4-2.4-6.8-6-6.8-2.8 0-4.3 1.6-6.4 1.6s-3.6-1.6-6.4-1.6Z"/>
+  </defs>
+</svg>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="grp">
+      <span><span class="dot" data-status-dot></span><span data-status-short>Pon–pet 09–19 h</span></span>
+      <span class="hrs">Subota i nedelja zatvoreno</span>
+    </div>
+    <div class="grp">
+      <span class="addr">Janka Veselinovića 6b, Niš</span>
+      <a href="tel:+381603346860">060 334 6860</a>
+    </div>
+  </div>
+</div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Vera Dental, na vrh stranice">
+      <svg viewBox="0 0 48 52" aria-hidden="true"><use href="#shield" fill="#0fabaa"/><use href="#tooth" fill="#fff"/></svg>
+      <span><b>VERA</b><i>DENTAL</i></span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Glavni meni">
+      <a href="#usluge">Usluge</a>
+      <a href="#radovi">Radovi</a>
+      <a href="#zasto">Zašto mi</a>
+      <a href="#pitanja">Pitanja</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="btn" href="#kontakt">Zakaži pregled</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Otvori meni" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <span class="tag">Stomatološka ordinacija · Niš</span>
+        <h1><span class="ln">Novi osmeh</span><span class="ln">kod <em>dr Bore.</em></span></h1>
+        <p class="lead"><span class="s">Vera Dental, ordinacija dr Bore Kitanovića u Nišu.</span><span class="s">Implanti, bezmetal krunice, proteze i beljenje zuba.</span></p>
+        <div class="cta-row">
+          <a class="btn has-ico" href="tel:+381603346860"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>Pozovite 060 334 6860</a>
+          <a class="tlink" href="#radovi">Pogledajte radove</a>
+        </div>
+        <div class="proofs">
+          <span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg>5,0 na Google-u, 41 recenzija</span>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="photo">
+          <img src="assets/dr-bora.jpg" width="640" height="360" alt="Dr Bora Kitanović radi sa pacijentom u ordinaciji Vera Dental" fetchpriority="high">
+        </div>
+        <div class="float f-status" aria-live="polite"><span class="dot" data-status-dot></span><span><span data-status>Radno vreme</span><small>Janka Veselinovića 6b</small></span></div>
+        <div class="float f-rating"><b>5,0</b><span><span class="stars" aria-hidden="true">★★★★★</span><br><span class="sr-only">Ocena 5,0, </span>41 recenzija<span class="hide-sm"> na Google-u</span></span></div>
+        <svg class="shield-badge" viewBox="0 0 48 52" aria-hidden="true">
+          <defs><clipPath id="shclip"><use href="#shield"/></clipPath>
+            <linearGradient id="shg" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+          <use class="sh-fill" href="#shield"/>
+          <use class="tooth" href="#tooth"/>
+          <g clip-path="url(#shclip)"><rect class="shine" x="0" y="-10" width="18" height="72" fill="url(#shg)" transform="rotate(20)"/></g>
+          <path class="sh-stroke" d="M24 3 44 10v15c0 12-8.4 20.4-20 24C12.4 45.4 4 37 4 25V10Z"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <section id="usluge">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="tag">Usluge</span>
+        <h2>Sve za zdrav i lep osmeh</h2>
+        <p class="lead"><span class="s">Od čišćenja kamenca do implanta.</span><span class="s">Cenu za vaš slučaj dobijate telefonom.</span></p>
+      </div>
+      <div class="svc rv" id="svc">
+        <article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4c-2.2 0-3.5 1.6-3.5 3.8 0 2.4 1 3.4 1.5 5.6M16 4c2.2 0 3.5 1.6 3.5 3.8 0 2.4-1 3.4-1.5 5.6M8 4c1.6 0 2.4.9 4 .9S14.4 4 16 4"/><path d="M10 14h4M10.5 17h3M11 20h2"/></svg></div><h3>Implanti</h3><p><span class="s">Zamena izgubljenog zuba.</span><span class="s">Nosač u kosti i krunica na njemu.</span></p><a class="ask" href="#kontakt" data-poziv="+381603346860">Pitajte za cenu →</a></article>
+        <article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4c-2.4 0-4 1.8-4 4.4 0 3 1.3 4.2 1.8 6.8.5 2.4 1 4.8 2.2 4.8 1.2 0 1.4-2.4 1.9-4.2.4-1.1 1.1-1.8 2.1-1.8"/><path d="M14 4h6v6h-6zM17 10v10"/></svg></div><h3>Bezmetal</h3><p><span class="s">Krunice bez metala.</span><span class="s">Boja i sjaj kao kod pravog zuba.</span></p><a class="ask" href="#kontakt" data-poziv="+381603346860">Pitajte za cenu →</a></article>
+        <article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="3"/><path d="M8 7v10M12 7v10M16 7v10"/></svg></div><h3>Metalkeramika</h3><p><span class="s">Krunice i mostovi na metalnoj osnovi.</span><span class="s">Čvrsto rešenje za više zuba.</span></p><a class="ask" href="#kontakt" data-poziv="+381603346860">Pitajte za cenu →</a></article>
+        <article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12c0-4 4-7 9-7s9 3 9 7"/><path d="M5 12v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2"/><path d="M8 12v4M12 12v4M16 12v4"/></svg></div><h3>Proteze</h3><p><span class="s">Zamena više zuba odjednom.</span><span class="s">Izrada po meri vaših vilica.</span></p><a class="ask" href="#kontakt" data-poziv="+381603346860">Pitajte za cenu →</a></article>
+        <article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="9" width="5" height="6" rx="1.5"/><rect x="9.5" y="9" width="5" height="6" rx="1.5"/><rect x="17" y="9" width="5" height="6" rx="1.5"/><path d="M2 12h20"/></svg></div><h3>Ortodoncija</h3><p><span class="s">Ispravljanje položaja zuba.</span><span class="s">Ravniji zubi i bolji zagrižaj.</span></p><a class="ask" href="#kontakt" data-poziv="+381603346860">Pitajte za cenu →</a></article>
+        <article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3c-2.4 0-4 1.8-4 4.4 0 3 1.3 4.2 1.8 6.8.5 2.4 1 4.8 2.2 4.8M16 3c2.4 0 4 1.8 4 4.4 0 3-1.3 4.2-1.8 6.8-.5 2.4-1 4.8-2.2 4.8M8 3c1.6 0 2.4.9 4 .9S14.4 3 16 3"/><path d="M10 9v8M14 9v8"/></svg></div><h3>Endodoncija</h3><p><span class="s">Lečenje kanala korena.</span><span class="s">Čuva zub umesto vađenja.</span></p><a class="ask" href="#kontakt" data-poziv="+381603346860">Pitajte za cenu →</a></article>
+        <article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20 14 10"/><path d="m14 10 3-3M17 4c1.5 1 2.5 2 3 3M15.5 2.5c2.5 1.4 4.6 3.5 6 6"/></svg></div><h3>Ultrazvučno čišćenje</h3><p><span class="s">Uklanjanje kamenca ultrazvukom.</span><span class="s">Zdrave desni i čisti zubi.</span></p><a class="ask" href="#kontakt" data-poziv="+381603346860">Pitajte za cenu →</a></article>
+        <article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3.5"/></svg></div><h3>Beljenje zuba</h3><p><span class="s">Svetliji ton zuba.</span><span class="s">Pitajte šta je moguće za vas.</span></p><a class="ask" href="#kontakt" data-poziv="+381603346860">Pitajte za cenu →</a></article>
+      </div>
+      <div class="sl-ctrl" data-for="svc"><button class="arr" type="button" data-dir="-1" aria-label="Prethodna"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></button><span class="sl-dots"></span><button class="arr" type="button" data-dir="1" aria-label="Sledeća"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></button></div>
+    </div>
+  </section>
+
+  <section class="works" id="radovi">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="tag">Radovi</span>
+        <h2>Pre i posle, iz naše ordinacije</h2>
+        <p class="lead"><span class="s">Pomerite klizač i uporedite.</span><span class="s">Ovo su pravi pacijenti dr Bore.</span></p>
+      </div>
+      <div class="ba rv" id="ba" style="--pos:50%">
+        <img src="assets/pp-glavni-pre.jpg" width="626" height="302" alt="Zubi pre terapije: oštećeni i nedostajući prednji zubi" loading="lazy">
+        <img class="after" src="assets/pp-glavni-posle.jpg" width="626" height="302" alt="Isti zubi posle terapije u ordinaciji Vera Dental" loading="lazy">
+        <span class="lbl l">Pre</span><span class="lbl r">Posle</span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="knob" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+        <input type="range" min="0" max="100" value="50" aria-label="Poređenje pre i posle, pomerite levo ili desno">
+      </div>
+      <p class="ba-note">Fotografije sa Instagram profila ordinacije:<br>@borakitanovic</p>
+      <div class="gallery rv" id="gal">
+        <figure><img src="assets/pp-1.jpg" width="640" height="336" alt="Prednji zubi pre i posle terapije, primer 1" loading="lazy"><figcaption><span>Pre</span><span>Posle</span></figcaption></figure>
+        <figure><img src="assets/pp-2.jpg" width="640" height="336" alt="Prednji zubi pre i posle terapije, primer 2" loading="lazy"><figcaption><span>Pre</span><span>Posle</span></figcaption></figure>
+        <figure><img src="assets/pp-3.jpg" width="640" height="336" alt="Prednji zubi pre i posle terapije, primer 3" loading="lazy"><figcaption><span>Pre</span><span>Posle</span></figcaption></figure>
+        <figure><img src="assets/pp-4.jpg" width="640" height="336" alt="Prednji zubi pre i posle terapije, primer 4" loading="lazy"><figcaption><span>Pre</span><span>Posle</span></figcaption></figure>
+        <figure><img src="assets/pp-5.jpg" width="640" height="336" alt="Prednji zubi pre i posle terapije, primer 5" loading="lazy"><figcaption><span>Pre</span><span>Posle</span></figcaption></figure>
+      </div>
+      <div class="sl-ctrl" data-for="gal"><button class="arr" type="button" data-dir="-1" aria-label="Prethodna"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></button><span class="sl-dots"></span><button class="arr" type="button" data-dir="1" aria-label="Sledeća"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></button></div>
+    </div>
+  </section>
+
+  <section id="zasto">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="tag">Zašto Vera Dental</span>
+        <h2>Tri razloga da dođete baš ovde</h2>
+      </div>
+      <div class="bento">
+        <article class="tile t-dr rv">
+          <svg class="wm" viewBox="0 0 48 52" aria-hidden="true"><path d="M24 3 44 10v15c0 12-8.4 20.4-20 24C12.4 45.4 4 37 4 25V10Z"/><path d="M17.6 15.2c-3.6 0-6 2.8-6 6.8 0 4.4 1.9 6.4 2.7 10.4.7 3.6 1.4 6.8 3.3 6.8 1.8 0 2-3.6 2.8-6.3.5-1.7 1.6-2.6 3.6-2.6s3.1.9 3.6 2.6c.8 2.7 1 6.3 2.8 6.3 1.9 0 2.6-3.2 3.3-6.8.8-4 2.7-6 2.7-10.4 0-4-2.4-6.8-6-6.8-2.8 0-4.3 1.6-6.4 1.6s-3.6-1.6-6.4-1.6Z"/></svg>
+          <span class="k">01 · Doktor</span>
+          <h3>Dr Bora lično</h3>
+          <p><span class="s">Ordinaciju vodi dr Bora Kitanović.</span><span class="s">Njegovo ime je i u znaku ordinacije.</span></p>
+          <a class="tlink" href="tel:+381603346860">Zakažite kod dr Bore: 060 334 6860</a>
+        </article>
+        <article class="tile t-rate rv" id="rate">
+          <div class="big"><span data-count="8">8</span></div>
+          <div><span class="k">02 · Usluge</span>
+            <h3 style="margin:8px 0">Sve na jednom mestu</h3>
+            <p><span class="s">Od čišćenja kamenca do implanta.</span><span class="s">Implanti, proteze, beljenje i još pet.</span></p></div>
+        </article>
+        <article class="tile t-ba rv">
+          <span class="k">03 · Radovi</span>
+          <h3>Pre i posle, na uvid</h3>
+          <div class="mini"><img src="assets/pp-glavni-pre.jpg" width="626" height="302" alt="" loading="lazy"><img class="after" src="assets/pp-glavni-posle.jpg" width="626" height="302" alt="" loading="lazy"><span class="ln" aria-hidden="true"></span><span class="lbl">Pre</span><span class="lbl r">Posle</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="tag">Kako izgleda dolazak</span>
+        <h2>Od poziva do novog osmeha</h2>
+      </div>
+      <div class="tl" id="tl">
+        <div class="tl-step"><span class="tl-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg></span><div><span class="n">Korak 1</span><h3>Pozovete</h3><p><span class="s">060 334 6860, radnim danima.</span><span class="s">Dogovorimo termin.</span></p></div></div>
+        <div class="tl-step"><span class="tl-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><span class="n">Korak 2</span><h3>Dođete</h3><p><span class="s">Janka Veselinovića 6b, Niš.</span><span class="s">U dogovoreno vreme.</span></p></div></div>
+        <div class="tl-step"><span class="tl-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="9" r="5"/><path d="m12.5 12.5 8 8"/></svg></span><div><span class="n">Korak 3</span><h3>Pregled</h3><p><span class="s">Doktor pregleda zube.</span><span class="s">Kaže šta je potrebno.</span></p></div></div>
+        <div class="tl-step"><span class="tl-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14c1 1.5 2.4 2.2 4 2.2s3-.7 4-2.2M9 9.5h.01M15 9.5h.01"/></svg></span><div><span class="n">Korak 4</span><h3>Novi osmeh</h3><p><span class="s">Kao na radovima iznad.</span><span class="s">Pre i posle.</span></p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <figure class="quote rv">
+        <div class="g">5,0<small>★★★★★</small></div>
+        <div>
+          <blockquote>„10godina sam iz straha od zubara izbegavao vrata stomatologije dok se nisam prepustio zlatnim rukama doktora Bore. Pored straha od zubara izlečio sam i sve zube. Apsolutno svaka pohvala za profesionalnost ove ordinacije.“</blockquote>
+          <cite>Milan Djordjevic · Google recenzija, 5 zvezdica</cite>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <section id="pitanja" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="tag">Pitanja</span>
+        <h2>Pre nego što pozovete</h2>
+      </div>
+      <div class="faq">
+        <details class="rv"><summary>Kada radite?</summary><p>Od ponedeljka do petka, od 09 do 19 časova. Subotom i nedeljom ordinacija ne radi.</p></details>
+        <details class="rv"><summary>Kako da zakažem pregled?</summary><p>Pozovite 060 334 6860, radnim danima od 09 do 19 h. Možete pisati i mejlom: ordinacijakitanovic@gmail.com</p></details>
+        <details class="rv"><summary>Koliko košta?</summary><p>Cena zavisi od stanja zuba i terapije. Najbrže ćete je saznati telefonom ili posle pregleda.</p></details>
+        <details class="rv"><summary>Gde se nalazite?</summary><p>Janka Veselinovića 6b, Niš&nbsp;18000.</p></details>
+        <details class="rv"><summary>Koje usluge radite?</summary><p>Implanti, bezmetal i metalkeramika, proteze, ortodoncija, endodoncija (lečenje kanala), ultrazvučno čišćenje kamenca i beljenje zuba.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <span class="ring" style="width:480px;height:480px;left:-160px;top:-200px" aria-hidden="true"></span>
+    <span class="ring" style="width:640px;height:640px;right:-240px;bottom:-360px" aria-hidden="true"></span>
+    <div class="wrap">
+      <div class="sec-head rv">
+        <h2>Zakažite pregled kod dr Bore</h2>
+        <p class="lead"><span class="s">Jedan poziv i dogovoren je termin.</span><span class="s">Radnim danima od 09 do 19 h.</span></p>
+      </div>
+      <a class="btn on-dark has-ico rv" href="tel:+381603346860"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>Pozovite 060 334 6860</a>
+    </div>
+  </section>
+
+  <section class="contact" id="kontakt">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="tag">Kontakt</span>
+        <h2>Ovde smo za vas</h2>
+      </div>
+      <div class="grid">
+        <div class="panel rv">
+          <h3>Vera Dental</h3>
+          <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg><div><b>Telefon</b><a href="tel:+381603346860">060 334 6860</a></div></div>
+          <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><div><b>Email</b><a href="mailto:ordinacijakitanovic@gmail.com">ordinacijakitanovic@gmail.com</a></div></div>
+          <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b>Adresa</b><span class="muted">Janka Veselinovića 6b, Niš 18000</span></div></div>
+          <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div style="flex:1"><b><span class="dot" data-status-dot></span><span data-status>Radno vreme</span></b>
+            <table class="hours" id="hours"><tbody>
+              <tr data-d="1"><td>Ponedeljak</td><td>09–19 h</td></tr><tr data-d="2"><td>Utorak</td><td>09–19 h</td></tr><tr data-d="3"><td>Sreda</td><td>09–19 h</td></tr><tr data-d="4"><td>Četvrtak</td><td>09–19 h</td></tr><tr data-d="5"><td>Petak</td><td>09–19 h</td></tr><tr data-d="6"><td>Subota</td><td>zatvoreno</td></tr><tr data-d="0"><td>Nedelja</td><td>zatvoreno</td></tr>
+            </tbody></table></div></div>
+        </div>
+        <div class="panel rv">
+          <h3>Pošaljite upit</h3>
+          <form id="upit" data-forma="demo" novalidate>
+            <!-- DEMO FORMA: ne šalje podatke, samo pokazuje poruku o uspehu.
+                 Posle kupovine poveži slanje na mejl firme u funkciji posaljiUpit(). -->
+            <label>Ime i prezime<input name="ime" autocomplete="name" required><span class="err" data-err="ime"></span></label>
+            <label>Telefon<input name="telefon" type="tel" autocomplete="tel" inputmode="tel" required><span class="err" data-err="telefon"></span></label>
+            <label>Šta vas muči?<textarea name="poruka" rows="4" placeholder="Npr. zub me boli, želim beljenje, treba mi proteza…"></textarea></label>
+            <button class="btn" type="submit">Pošalji upit</button>
+            <p class="form-note">Ili odmah pozovite 060 334 6860.</p>
+            <p class="form-ok" role="status" hidden>Hvala! Javljamo se u toku radnog vremena.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="logo" href="#top" aria-label="Vera Dental, na vrh stranice"><svg viewBox="0 0 48 52" aria-hidden="true"><use href="#shield" fill="#0fabaa"/><use href="#tooth" fill="#fff"/></svg><span><b>VERA</b><i>DENTAL</i></span></a>
+      <p style="margin-top:12px">Ordinacija dr&nbsp;Bore&nbsp;Kitanovića</p>
+    </div>
+    <div><p>Janka Veselinovića 6b, Niš 18000</p><p><a href="tel:+381603346860">060 334 6860</a></p></div>
+    <div><p>Pon–pet 09–19 h</p><p>Subota i nedelja zatvoreno</p></div>
+    <p class="copy">© 2026 Vera Dental, Niš</p>
+  </div>
+</footer>
+
+<div class="callfab" id="callfab"><a class="btn on-dark has-ico" href="tel:+381603346860"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>Pozovite 060 334 6860</a></div>
+
+<script>
+(function(){
+  // Dugmad bez broja u tekstu: na telefonu zovu, na računaru vode na kontakt
+  if(matchMedia('(pointer:coarse)').matches)document.querySelectorAll('[data-poziv]').forEach(function(a){a.href='tel:'+a.dataset.poziv;});
+
+  // Meni
+  var nav=document.getElementById('nav'), burger=document.getElementById('burger');
+  burger.addEventListener('click',function(){var o=nav.classList.toggle('open');burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Zatvori meni':'Otvori meni');});
+  document.querySelectorAll('#menu a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');burger.setAttribute('aria-expanded','false');});});
+
+  // Otvoreno sada (pon-pet 09-19)
+  function status(){
+    var d=new Date(), day=d.getDay(), m=d.getHours()*60+d.getMinutes(), work=day>=1&&day<=5;
+    var open=work&&m>=540&&m<1140, txt, short;
+    if(open){txt='Otvoreno sada, do 19\u00a0h';short='Otvoreno do 19\u00a0h';}
+    else if(work&&m<540){txt='Zatvoreno, otvaramo danas u 9\u00a0h';short='Otvaramo u 9\u00a0h';}
+    else {var nd=(day===5&&m>=1140)||day===6||day===0?'u ponedeljak':'sutra';if(day>=1&&day<=4&&m>=1140)nd='sutra';txt='Zatvoreno, otvaramo '+nd+' u 9\u00a0h';short='Otvaramo '+nd+' u 9\u00a0h';}
+    document.querySelectorAll('[data-status]').forEach(function(e){e.textContent=txt;});
+    document.querySelectorAll('[data-status-short]').forEach(function(e){e.textContent=short;});
+    document.querySelectorAll('[data-status-dot]').forEach(function(e){e.classList.toggle('open',open);});
+    var row=document.querySelector('#hours tr[data-d="'+day+'"]'); if(row)row.classList.add('today');
+  }
+  status(); setInterval(status,60000);
+
+  // Dužina putanje štita za iscrtavanje
+  var st=document.querySelector('.shield-badge .sh-stroke'); if(st&&st.getTotalLength)st.style.setProperty('--len',Math.ceil(st.getTotalLength()));
+
+  // Reveal: posmatra elemente, sadržaj je vidljiv i bez JS-a
+  var rv=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});
+    rv.forEach(function(el,i){var sib=el.parentElement.querySelectorAll(':scope > .rv');var idx=Array.prototype.indexOf.call(sib,el);el.style.transitionDelay=Math.min(idx,5)*70+'ms';io.observe(el);});
+  } else rv.forEach(function(el){el.classList.add('in');});
+
+  // Klizač pre/posle, jednom se sam pomeri kad uđe u ekran
+  var ba=document.getElementById('ba'), range=ba.querySelector('input');
+  function setPos(v){ba.style.setProperty('--pos',v+'%');range.value=v;}
+  range.addEventListener('input',function(){setPos(range.value);});
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce&&'IntersectionObserver' in window){
+    var bo=new IntersectionObserver(function(es){if(!es[0].isIntersecting)return;bo.disconnect();
+      var t0=null;function step(t){if(!t0)t0=t;var p=Math.min((t-t0)/1800,1);var v=50+30*Math.sin(p*Math.PI*2)*(1-p);setPos(v.toFixed(1));if(p<1)requestAnimationFrame(step);}
+      setTimeout(function(){requestAnimationFrame(step);},500);},{threshold:.5});
+    bo.observe(ba);
+  }
+
+  // Klizači na telefonu: tačkice, strelice i jedno „cimanje“ kad uđu u ekran
+  // Glatko pomeranje klizača: sopstvena animacija (scroll-snap se isključi dok traje)
+  function glide(tr,to,ms){
+    var from=tr.scrollLeft, t0=null, done=false, id=(tr._glide=(tr._glide||0)+1); tr.style.scrollSnapType='none';
+    function end(){if(done||tr._glide!==id)return;done=true;tr.scrollLeft=to;tr.style.scrollSnapType='';tr.dispatchEvent(new Event('scroll'));}
+    function f(t){if(done||tr._glide!==id)return;if(!t0)t0=t;var q=Math.min((t-t0)/(ms||420),1),e=1-Math.pow(1-q,3);tr.scrollLeft=from+(to-from)*e;if(q<1)requestAnimationFrame(f);else end();}
+    requestAnimationFrame(f); setTimeout(end,(ms||420)+120);
+  }
+  document.querySelectorAll('.sl-ctrl').forEach(function(c){
+    var tr=document.getElementById(c.dataset.for), items=tr.children, dots=c.querySelector('.sl-dots');
+    for(var i=0;i<items.length;i++)dots.appendChild(document.createElement('i'));
+    function idx(){var r=tr.getBoundingClientRect(),mid=r.left+r.width/2,best=0,d=1e9;for(var i=0;i<items.length;i++){var b=items[i].getBoundingClientRect(),dd=Math.abs(b.left+b.width/2-mid);if(dd<d){d=dd;best=i;}}return best;}
+    function upd(){var k=idx();[].forEach.call(dots.children,function(e,i){e.classList.toggle('on',i===k);});c.querySelector('[data-dir="-1"]').disabled=k===0;c.querySelector('[data-dir="1"]').disabled=k===items.length-1;}
+    tr.addEventListener('scroll',upd,{passive:true}); upd();
+    c.querySelectorAll('.arr').forEach(function(b){b.addEventListener('click',function(){var k=Math.max(0,Math.min(items.length-1,idx()+(+b.dataset.dir)));var r=tr.getBoundingClientRect(),it=items[k].getBoundingClientRect();glide(tr,tr.scrollLeft+(it.left+it.width/2)-(r.left+r.width/2));});});
+    if(!reduce&&'IntersectionObserver' in window){var no=new IntersectionObserver(function(es){if(!es[0].isIntersecting||getComputedStyle(c).display==='none')return;no.disconnect();
+      setTimeout(function(){var s0=tr.scrollLeft;glide(tr,s0+72,450);setTimeout(function(){glide(tr,s0,450);},700);},400);},{threshold:.6});no.observe(tr);}
+  });
+
+  // Bento: brojač ocene i zvezdice
+  var rate=document.getElementById('rate');
+  if(rate&&'IntersectionObserver' in window&&!reduce){var ro=new IntersectionObserver(function(es){if(!es[0].isIntersecting)return;ro.disconnect();rate.classList.add('go');
+    var el=rate.querySelector('[data-count]'),t0=null;function tick(t){if(!t0)t0=t;var q=Math.min((t-t0)/1200,1);el.textContent=Math.round(8*(1-Math.pow(1-q,3)));if(q<1)requestAnimationFrame(tick);}requestAnimationFrame(tick);},{threshold:.5});ro.observe(rate);}
+  else if(rate)rate.classList.add('go');
+
+  // Bento: traka radnog dana (09-19 h) sa trenutnim vremenom
+  var day=document.getElementById('day');
+  function dayBar(){var d=new Date(),m=d.getHours()*60+d.getMinutes(),w=d.getDay()>=1&&d.getDay()<=5;var p=w?Math.max(0,Math.min(1,(m-540)/600)):0;day.style.setProperty('--prog',(p*100).toFixed(1)+'%');}
+  if(day){dayBar();setInterval(dayBar,60000);}
+
+  // Vremenska linija se puni sa skrolom
+  var tl=document.getElementById('tl'), tsteps=tl?tl.querySelectorAll('.tl-step'):[];
+  function tlUpd(){if(!tl)return;var r=tl.getBoundingClientRect(),vh=window.innerHeight;var p=reduce?1:Math.max(0,Math.min(1,(vh*.7-r.top)/(r.height*.9)));tl.style.setProperty('--p',p.toFixed(3));
+    tsteps.forEach(function(st,i){st.classList.toggle('on',p>=i/(tsteps.length-1)-.02);});}
+  window.addEventListener('scroll',tlUpd,{passive:true}); tlUpd();
+
+  // Lepljivo zaglavlje i plutajuće dugme za poziv
+  var hero=document.querySelector('.hero'), fab=document.getElementById('callfab'), foot=document.querySelector('footer');
+  function onScroll(){
+    nav.classList.toggle('stuck',window.scrollY>8);
+    var past=hero.getBoundingClientRect().bottom<0, footIn=foot.getBoundingClientRect().top<window.innerHeight;
+    fab.classList.toggle('show',past&&!footIn);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  // Demo forma
+  var form=document.getElementById('upit');
+  function posaljiUpit(podaci){ /* TODO posle kupovine: slanje na mejl firme */ return Promise.resolve(); }
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var ok=true, first=null;
+    form.querySelectorAll('.err').forEach(function(x){x.textContent='';});
+    var ime=form.ime.value.trim(), tel=form.telefon.value.replace(/[^\d+]/g,'');
+    if(ime.length<2){form.querySelector('[data-err=ime]').textContent='Upišite ime i prezime.';ok=false;first=first||form.ime;}
+    if(tel.length<6){form.querySelector('[data-err=telefon]').textContent='Upišite broj telefona da bismo vas pozvali.';ok=false;first=first||form.telefon;}
+    if(!ok){first.focus();return;}
+    posaljiUpit({ime:ime,telefon:tel,poruka:form.poruka.value}).then(function(){form.reset();form.querySelector('.form-ok').hidden=false;});
+  });
+})();
+</script>
+</body>
+</html>
